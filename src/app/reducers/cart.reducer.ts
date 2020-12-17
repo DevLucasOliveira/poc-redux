@@ -28,7 +28,7 @@ export function cartReducer(
 
                 console.log(state);
                 return state;
-            }
+            };
 
         case ActionTypes.Clear:
             {
@@ -49,6 +49,6 @@ function calculateTotal(products: ProductModel[]): number {
     products.forEach(product => {
         total += product.price;
     });
-    
+
     return total;
 }
